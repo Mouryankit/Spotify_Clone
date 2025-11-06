@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css"> <!--this page add the css in whole spotify website-->
+    <link rel="stylesheet" href="about.css"> <!--This file add only styling of author page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--this input checkbox is used to apply the logic of adding a author section without using javascript -->
+    <input type="checkbox" id="check"> 
+    
+    <!-- this is the html code of the spotify website -->
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create Playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll help you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+                <div class="box" style="height: 5%;">
+                    <label for="check"><b>Click here to know about the Author of the page</b></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-items hide">Explore premium</button>
+                    <button class="badge nav-items dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Installed App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>  
+            </div>
+            
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/card1img.jpeg" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks ... </p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio1.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio1.PNG" class="card-img"> -->
+                    <p class="card-info">With Sachin-Jigar, Jeet Gannguli, Sachet-Tandom..</p>
+                </div>
+                 <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/trending_songs3.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/trending_songs3.PNG" class="card-img"> -->
+                    <p class="card-title">Naam Chale</p>
+                    <p class="card-info">Vikram Sarkar</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album3.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album3.PNG" class="card-img"> -->
+                    <p class="card-title">Sanam Teri Kasam (Original Motion..</p>
+                    <p class="card-info">Himesh Reshammiya, Sameer Anjaan</p>
+                </div>
+                
+            </div>
+            <h2>Tranding now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/trending_songs1.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/trending_songs1.PNG" class="card-img"> -->
+                    <p class="card-title">AZUL</p>
+                    <p class="card-info">Guru Randhawa, Gurjut Gill, Lavish Dhiman</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/trending_songs2.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/trending_songs2.PNG" class="card-img"> -->
+                    <p class="card-title">Thodi Si Daaru</p>
+                    <p class="card-info">AP Dhillon, Shreya Ghosal</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/trending_songs3.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/trending_songs3.PNG" class="card-img"> -->
+                    <p class="card-title">Naam Chale</p>
+                    <p class="card-info">Vikram Sarkar</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/trending_songs4.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/trending_songs4.PNG" class="card-img"> -->
+                    <p class="card-title">Sunn Mere Yaar Ve-From "Param</p>
+                    <p class="card-info">Sachin-Jigar, Aditya Rikhari, Amitabh...</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/trending_songs5.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/trending_songs5.PNG" class="card-img"> -->
+                    <p class="card-title">Janab-e-Aali</p>
+                    <p class="card-info">Pritam, Sachet-Tandom, Saaj Bhatt, Amitabh...</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/trending_songs6.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/trending_songs6.PNG" class="card-img"> -->
+                    <p class="card-title">Soniya-Soniya</p>
+                    <p class="card-info">A.R. Rehman, Vairamuthu, Udit...</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/trending_songs7.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/trending_songs7.PNG" class="card-img"> -->
+                    <p class="card-title">Dil Kaa Jo Haal Hai</p>
+                    <p class="card-info">Abhijeet, Shreya, Ghosal</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/trending_songs8.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/trending_songs8.PNG" class="card-img"> -->
+                    <p class="card-title">Jutti Meri (Live)</p>
+                    <p class="card-info">Neha Basin</p>
+                </div>
+            </div>
+            <h2>Popular Albums And Singles</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album1.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album1.PNG" class="card-img"> -->
+                    <p class="card-title">Ashiqui2</p>
+                    <p class="card-info">Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album2.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album2.PNG" class="card-img"> -->
+                    <p class="card-title">Yeh Jawaani Hai Deewani</p>
+                    <p class="card-info">Pritam</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album3.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album3.PNG" class="card-img"> -->
+                    <p class="card-title">Sanam Teri Kasam (Original Motion..</p>
+                    <p class="card-info">Himesh Reshammiya, Sameer Anjaan</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album4.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album4.PNG" class="card-img"> -->
+                    <p class="card-title">Finding Her</p>
+                    <p class="card-info">Kushagra, Bharath, Saaheal</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album5.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album5.PNG" class="card-img"> -->
+                    <p class="card-title">Young G.O.A.T</p>
+                    <p class="card-info">Cheema Y, Gur Sidhu</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album6.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album6.PNG" class="card-img"> -->
+                    <p class="card-title">Ultimate Love Songs - Arigit Singh</p>
+                    <p class="card-info">Arigit Singh</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album7.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album7.PNG" class="card-img"> -->
+                    <p class="card-title">Making Memories</p>
+                    <p class="card-info">Karan Aujja, lkky</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album8.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album8.PNG" class="card-img"> -->
+                    <p class="card-title">Moosetape</p>
+                    <p class="card-info">Sidhu Moose Wala</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album9.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album9.PNG" class="card-img"> -->
+                    <p class="card-title">Sicario</p>
+                    <p class="card-info">Shubh</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_album10.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_album10.PNG" class="card-img"> -->
+                    <p class="card-title">Jutti Meri (Live)</p>
+                    <p class="card-info">Neha Basin</p>
+                </div>
+            </div>
+            <h2>Popular Radio</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio1.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio1.PNG" class="card-img"> -->
+                    <p class="card-info">With Sachin-Jigar, Jeet Gannguli, Sachet-Tandom..</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio2.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio2.PNG" class="card-img"> -->
+                    <p class="card-info">With Pritam, Mustafa Jahid, Atif Aslam..</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio3.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio3.PNG" class="card-img"> -->
+                    <p class="card-info">With A.R. Rehman, Salim-sulaiman..</p>
+                </div>    
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio4.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio4.PNG" class="card-img"> -->
+                    <p class="card-info">With Kumar Sanu, Vinod Rathod, Udit Narayan..</p>
+                </div> 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio5.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio5.PNG" class="card-img"> -->
+                    <p class="card-info">With Shubh, Karan Aujja, Sidhu Moose Wala..</p>
+                </div> 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio6.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio6.PNG" class="card-img"> -->
+                    <p class="card-info">With Anirudh Ravichander...</p>
+                </div> 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio7.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio7.PNG" class="card-img"> -->
+                    <p class="card-info">With Badshah, Harrdy Sandhu, Astha Gill</p>
+                </div> 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio8.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio8.PNG" class="card-img"> -->
+                    <p class="card-info">With AP Dhillon, Sharry Mann, Tegi Pannu</p>
+                </div> 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio9.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio9.PNG" class="card-img"> -->
+                    <p class="card-info">With Mukesh, Hemant Kumar, Tabassum..</p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/popular_radio10.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/popular_radio10.PNG" class="card-img"> -->
+                    <p class="card-info">With Anuradha Paudwal, Alka Yagnik, Jatin Lalit</p>
+                </div>
+            </div>
+            <h2>Featured charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/featured_chart1.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/featured_chart1.PNG" class="card-img"> -->
+                    <p class="card-title">Top Songs - Global</p>
+                    <p class="card-info">Your weekly updates of the most played tracks ... </p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/featured_chart2.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/featured_chart2.PNG" class="card-img"> -->
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your weekly updates of the most played tracks ... </p>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/featured_chart3.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/featured_chart3.PNG" class="card-img"> -->
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks ... </p>
+                </div>    
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/featured_chart4.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/featured_chart4.PNG" class="card-img"> -->
+                    <p class="card-title">Top 50 - India</p>
+                    <p class="card-info">Your daily updates of the most played tracks ... </p>
+                </div> 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/featured_chart5.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/featured_chart5.PNG" class="card-img"> -->
+                    <p class="card-title">Viral 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks ... </p>
+                </div> 
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./assets/featured_chart6.PNG" class="card-img">
+                        <img src="./assets/play_musicbar.png" class="music-on-off">
+                    </div>
+                    <!-- <img src="./assets/featured_chart6.PNG" class="card-img"> -->
+                    <p class="card-title">Viral 50 - India</p>
+                    <p class="card-info">Your daily updates of the most played tracks ... </p>
+                </div> 
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+
+
+        </div>
+
+        <div class="music-player">
+            <div class="album">
+                <img src="./assets/hw_album_picture.jpeg" class="curr-song-img">
+                <div class="curr-song-info">
+                    <p class="song-name">DayLight</p>
+                    <p class="author-name">Devid Kushner</p>
+                </div>
+                <div class="album-icon">
+                    <i class="fa-regular fa-heart heart"></i>
+                    <!-- <img src="./assets/heart.png" class="hw_album_icon2"> -->
+                    <img src="./assets/hw_album_icon2.png" class="hw_album_icon2">
+                </div>
+                
+            </div>
+            <div class="player">
+                <div class="player-contols">
+                    <img src="./assets/player_icon1.png" class="player-contol-icon">
+                    <img src="./assets/player_icon2.png" class="player-contol-icon">
+                    <img src="./assets/player_icon3.png" class="player-contol-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon4.png" class="player-contol-icon">
+                    <img src="./assets/player_icon5.png" class="player-contol-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tots-time">3:33s</span>                      
+                </div>
+            </div>
+            <div class="controls">
+                <img src="./assets/hw_controls_icon1.png" class="controls-icons" style="height: 50px;">
+                <img src="./assets/hw_controld_icon2.png" class="controls-icons" style="height: 50px;">
+                <img src="./assets/hw_controls_icon3.png" class="controls-icons" style="opacity: 0.6;">
+                <img src="./assets/hw_controls_icon4.png" class="controls-icons" style="opacity: 0.6;">
+                <div class="controls-sound">
+                    <img src="./assets/hw_controls_icon5.png" style="height: 40px; width: 35px;">
+                    <input type="range" min="0" max="100" class="controls-progress-bar" step="1">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- this html part(class="about-section") contains the information of the author and short summary of the page 
+        this html code is appear on the page when we click the check box id #check whose label is  
+        inside the class (main -> sidebar -> library -> inside library third div)
+        in the card section of the page
+        -->
+    <div class="about-section">
+        <label for="check" class="about-section-closebtn">Close</label>
+        <section class="intro">
+            <h1>Hello, I'm Ankit Mourya</h1>
+        </section>
+    
+        <section class="project-info">
+            <h2>About This Project</h2>
+            <section class="project-info-content">
+                <p>
+                    This project is a <strong>Spotify Clone</strong> built using <strong>HTML and CSS</strong>.  
+                    The project focuses on building a responsive and interactive layout without using JavaScript.
+                    It includes a sidebar navigation, music cards, trending sections, and a functional music player layout.
+                </p>
+                <p>
+                    <strong>Key Features:</strong>
+                    <ul class="no-dot">
+                    <li>&#127911; Sidebar navigation for Home, Search, and Library</li>
+                    <li>&#128191; Music cards showing trending songs, albums, and featured charts</li>
+                    <li>&#127925; Fixed music player at the bottom with playback controls</li>
+                    <li>&#128161; Hover effects and smooth styling inspired by Spotify’s theme</li>
+                </ul>
+                </p>
+                <p>
+                    <strong>Technologies Used:</strong> 
+                    <p>HTML, CSS, Font Awesome, Visual Studio Code</p>
+                </p>
+                <p>
+                    <strong>What I Learned:</strong>
+                    <p>Understanding page layout using Flexbox and  
+                    using icons and media elements effectively, and improving my front-end design sense.</p>
+                </p>
+                <p>
+                    <strong>Future Improvements:</strong>
+                    <p>Add JavaScript to enable real music playback,  
+                    dynamic playlists, and responsive animations.</p>
+                </p>
+            </section>  
+        </section>
+        <section class="credits">
+            <h2>Credits</h2>
+            <section class="credits-content">
+                <ul class="no-dot">
+                <li>Guided by <a href="https://www.apnacollege.in/">Shraddha maa'm (From Apna College)</a></li>
+                <li>Icons from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
+                <li>fonts from <a href="https://fonts.google.com/" target="_blank">Google font</a></li>
+                <li>UI from <a href="https://open.spotify.com/" target="_blank">Spotify</a></li>
+            </ul>
+            </section>
+        </section>
+            
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <section class="contact-info-content">
+                    <ul class="no-dot">
+                    <li>Email: mourya.ankit1612@gmail.com</li>
+                    <li>Phone: +91-6260663873</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/ankit-mourya-7a3185291" target="_blank" rel="noopener noreferrer">   https://www.linkedin.com/in/ankit-mourya-7a3185291</a></li>
+                    <li>GitHub: <a href="https://github.com/Mouryankit/" target="_blank" rel="noopener noreferrer">   https://github.com/Mouryankit</a></li>
+                    <li>Leetcode: <a href=" https://leetcode.com/u/Mouryankit/" target="_blank" rel="noopener noreferrer">   https://leetcode.com/u/Mouryankit</a></li>
+                </ul>
+            </section>  
+        </section>
+            
+            <br>
+            <p>&copy; 2025 Ankit Mourya. All rights reserved.</p>
+        </section>
+    </div>
+    
+</body>
+</html>
+
+
+
